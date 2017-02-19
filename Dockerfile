@@ -33,6 +33,7 @@ RUN apk --no-cache --update add \
         php5-ctype \
         php5-mcrypt \
         php5-openssl \
+        php5-xml \
         php5-imagick
 
 # Install PHP Mongo extension
@@ -66,7 +67,7 @@ RUN touch /var/log/php-fpm.log && \
     chown www-data:www-data /var/log/php-fpm.log && \
     chown www-data:www-data $HOME
 
-# USER www-data
+RUN cd ${HOME}
 WORKDIR ${HOME}
 
 # Export PHP-FPM port
