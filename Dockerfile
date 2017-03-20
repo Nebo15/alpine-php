@@ -34,6 +34,7 @@ RUN apk --no-cache --update add \
         php5-mcrypt \
         php5-openssl \
         php5-xml \
+        php5-intl \
         php5-imagick
 
 # Install PHP Mongo extension
