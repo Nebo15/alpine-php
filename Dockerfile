@@ -1,4 +1,4 @@
-FROM php:7-fpm-alpine
+FROM php:7.0-fpm-alpine
 
 MAINTAINER Nebo#15 support@nebo15.com
 
